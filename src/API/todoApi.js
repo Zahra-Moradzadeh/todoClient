@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BaseUrl = "http://localhost:5040/task";
+const BaseUrl = "https://fullstackserver-6ea0.onrender.com/task";
 
 const getAllTasksData = async () => {
   const result = await axios.get(BaseUrl);

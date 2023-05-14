@@ -31,8 +31,8 @@ const TaskList = ({ tasksData }) => {
           </tr>
         </thead>
         <tbody>
-          {tasksData?.map((course) => {
-            const { _id, title, deadline, category } = course;
+          {tasksData?.map((task) => {
+            const { _id, title, deadline, category } = task;
             return (
               <tr key={_id}>
                 <td>{title}</td>
@@ -40,7 +40,7 @@ const TaskList = ({ tasksData }) => {
                 <td>{category}</td>
                 <td>
                   <Button variant="success" type="submit">
-                  <Link to={`/edit/${title}`} state={course} style={{textDecorationLine:"none",color:"white"}}>
+                  <Link to={`/edit/${title}`} state={task} style={{textDecorationLine:"none",color:"white"}}>
                     Edit
                   </Link>
                   </Button>

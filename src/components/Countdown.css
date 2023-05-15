@@ -1,0 +1,31 @@
+/* body{
+    font-size: 2rem;
+} */
+.countdown-container{
+    /* margin: 5px auto; */
+    gap: 80px;
+    /* background-color: #fff; */
+    /* box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.countdown-values{
+    display: flex;
+}
+.big-text{
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1;
+    margin:0px 10px;
+}
+.countdown-values{
+    margin: 10px 20px;
+    text-align: center;
+}
+.countdown-values span{
+    font-size:1rem ;
+}

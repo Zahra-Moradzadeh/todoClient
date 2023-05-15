@@ -2,6 +2,8 @@ import { Table, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { deleteTaskData } from "../API/todoApi";
 import { Link } from "react-router-dom";
+import { FaStar } from 'react-icons/fa';
+
 
 const TaskList = ({ tasksData }) => {
   const navigate = useNavigate();
@@ -23,7 +25,7 @@ const TaskList = ({ tasksData }) => {
       >
         <thead>
           <tr>
-            <th>Task</th>
+            <th colSpan={2}>Task</th>
             <th>Deadline</th>
             <th>Category</th>
             <th>Edit</th>
@@ -35,6 +37,7 @@ const TaskList = ({ tasksData }) => {
             const { _id, title, deadline, category } = task;
             return (
               <tr key={_id}>
+                <td><FaStar /></td>
                 <td>{title}</td>
                 <td>{deadline}</td>
                 <td>{category}</td>

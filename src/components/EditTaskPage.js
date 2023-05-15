@@ -39,7 +39,7 @@ const EditTaskPage = () => {
           Edit your task here :D{" "}
         </h2>
         <h4 style={{ marginBottom: 30 }}>
-          details of your task with {params.title} slug
+          details of your task with {params.title} title
         </h4>
 
         <Form onSubmit={handleSubmit}>
